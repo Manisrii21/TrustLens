@@ -1,9 +1,10 @@
+streamlit
 fastapi
 uvicorn
-streamlit
 pandas
 numpy
 scikit-learn
+joblib
 networkx
 matplotlib
 plotly
