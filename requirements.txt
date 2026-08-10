@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+pandas
+numpy
+scikit-learn
+networkx
+matplotlib
+plotly
+python-dotenv
+requests
+beautifulsoup4
+openai
