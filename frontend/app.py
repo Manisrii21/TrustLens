@@ -3,6 +3,8 @@ import requests
 import re
 import base64
 
+API_URL = "https://trustlens-j0su.onrender.com"
+
 # =========================================================
 # PAGE CONFIG
 # =========================================================
@@ -391,10 +393,10 @@ if analyze_link:
         with st.spinner("🔎 Analyzing URL..."):
 
             response = requests.post(
-                "http://127.0.0.1:8000/analyze",
-                json={"url": link_url.strip()},
-                timeout=30
-            )
+    f"{API_URL}/analyze",
+    json={"url": link_url.strip()},
+    timeout=30
+)
 
         if response.status_code != 200:
 
@@ -625,10 +627,10 @@ if check_message:
             try:
 
                 response = requests.post(
-                    "http://127.0.0.1:8000/analyze",
-                    json={"url": clean_url},
-                    timeout=30
-                )
+    f"{API_URL}/analyze",
+    json={"url": clean_url},
+    timeout=30
+)
 
                 if response.status_code == 200:
 
